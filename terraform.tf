@@ -2,15 +2,12 @@
 # SPDX-License-Identifier: MPL-2.0
 
 terraform {
-
-  /* Uncomment this block to use Terraform Cloud for this tutorial
   cloud {
-      organization = "organization-name"
+      organization = "transact-tutorials"
       workspaces {
-        name = "learn-terraform-*"
+        name = "learn-terraform"
       }
   }
-  */
 
   required_providers {
     aws = {
@@ -22,5 +19,5 @@ terraform {
     }
   }
 
-  required_version = "~> 1.2.0"
+  required_version = "~> 1.11.2"
 }
